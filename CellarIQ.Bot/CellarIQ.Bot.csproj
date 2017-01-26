@@ -213,6 +213,7 @@
     <Compile Include="Utilities\FacebookHelpers.cs" />
     <Compile Include="Utilities\FacebookProfile.cs" />
     <Compile Include="Utilities\SetUserNameAspect.cs" />
+    <Compile Include="Utilities\WineSearchParametersExtensions.cs" />
     <Compile Include="WineDetailsForm.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -36,17 +36,7 @@ namespace CellarIQ.Bot.Dialogs
             }
             return matchingItems;
         }
-
-        private static WineSearchParameters ExtractWineParametersFromEntities(IList<EntityRecommendation> entityRecommendations)
-        {
-            WineSearchParameters wineSearchParams = new WineSearchParameters();
-            foreach (EntityRecommendation entityRecommendation in entityRecommendations)
-            {
-                wineSearchParams.SetParameter(entityRecommendation.Type, entityRecommendation.Entity);
-            }
-
-            return wineSearchParams;
-        }
+        
 
         private static WineSearchParameters ExtractWineParametersFromIntentRecommendation(IntentRecommendation intent)
         {

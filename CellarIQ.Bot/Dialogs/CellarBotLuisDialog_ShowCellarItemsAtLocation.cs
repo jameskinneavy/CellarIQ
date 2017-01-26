@@ -18,7 +18,7 @@ namespace CellarIQ.Bot.Dialogs
         [LuisIntent("ShowCellarItemsAtLocation")]
         public async Task ShowCellarItemsAtLocation(IDialogContext context, LuisResult result)
         {
-            _wineSearchParameters = ExtractWineParametersFromEntities(result.Entities);
+            _wineSearchParameters = WineSearchParametersUtil.ExtractFromEntities(result.Entities);
             CellarManager cellarManager = GetCellarManager();
             var cellarItems =  cellarManager.FindCellarItems(_wineSearchParameters);
 

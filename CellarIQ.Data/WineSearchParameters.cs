@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace CellarIQ.Data
 {
+
     [Serializable]
     public class WineSearchParameters
     {

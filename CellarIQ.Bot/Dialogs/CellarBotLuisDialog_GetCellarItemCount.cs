@@ -20,7 +20,7 @@ namespace CellarIQ.Bot.Dialogs
             try
             {
 
-                WineSearchParameters wineSearchParams = ExtractWineParametersFromEntities(result.Entities);
+                WineSearchParameters wineSearchParams = WineSearchParametersUtil.ExtractFromEntities(result.Entities);
 
                 var wines = GetCellarItemsMatchingSpec(wineSearchParams).Select(i => i.Value).SelectMany(list => list).Distinct().ToList();
                 int count = wines.Count();

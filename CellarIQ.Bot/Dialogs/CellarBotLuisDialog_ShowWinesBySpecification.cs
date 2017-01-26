@@ -24,7 +24,7 @@ namespace CellarIQ.Bot.Dialogs
             _questions = new Dictionary<string, string>();
             _answers = new Dictionary<string, string>();
             //_questions = BuildQuestionsFromKnownEntities(result.Entities);
-            _wineSearchParameters = ExtractWineParametersFromEntities(result.Entities);
+            _wineSearchParameters = WineSearchParametersUtil.ExtractFromEntities(result.Entities);
             
 
 

@@ -20,7 +20,7 @@ namespace CellarIQ.Bot.Dialogs
             try
             {
                 //var intent = result.Intents.Single(i => i.Intent.Equals("GetWineLabelCount", StringComparison.OrdinalIgnoreCase));
-                WineSearchParameters wineSearchParams = ExtractWineParametersFromEntities(result.Entities);
+                WineSearchParameters wineSearchParams = WineSearchParametersUtil.ExtractFromEntities(result.Entities);
 
                 int count;
 
